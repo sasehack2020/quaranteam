@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
 import AppMap from './components/AppMap';
+import Landing from './components/Landing';
+import Header from './components/Header';
+import './bootstrap.css';
 
 function App() {
   return (
-    <AppMap state="CA"/>
+    <Header/>
   );
 }
 
