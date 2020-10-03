@@ -9,7 +9,7 @@ export default class Landing extends React.Component {
   			<Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
+      src="https://allbusinesssystems.com/wp-content/uploads/2017/05/Exam-Room-Casegoods-1-Stance.jpg"
       alt="First Slide"
     />
     <Carousel.Caption>
@@ -20,7 +20,7 @@ export default class Landing extends React.Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
+      src="https://th.bing.com/th/id/OIP.Olot3z24rM7z8g-AytkHPgHaE7?pid=Api&rs=1"
       alt="Third slide"
     />
 
@@ -32,7 +32,7 @@ export default class Landing extends React.Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
+      src="https://kathmandupathlab.com/wp-content/uploads/2017/11/lab4.jpg"
       alt="Third slide"
     />
 
