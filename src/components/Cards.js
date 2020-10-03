@@ -1,5 +1,5 @@
 import React from 'react';
-import Cards form './Card'
+import Cards form './Cards'
 
 class Cards extends React.Component {
 
