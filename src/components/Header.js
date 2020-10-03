@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import AppMap from './AppMap';
 import Quiz from './Quiz';
 import Landing from './Landing';
+import Cards from './Cards';
 import { Nav } from 'react-bootstrap';
 import {
   BrowserRouter as Router,
@@ -26,7 +27,7 @@ var routes = [
     {
         path: '/',
         exact: true,
-        main: () => <Landing/>
+        main: () => <Cards/>
     },
     {
         path: '/map',
@@ -45,7 +46,9 @@ function HeaderComponent() {
         <div>
             <Navbar bg='primary' expand=''>
                 <Navbar.Brand href={`${process.env.PUBLIC_URL}`}>
-                    Quaranteam
+                    <Link to={'/'}>
+                        Quaranteam
+                    </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle style={{ 'backgroundColor': '#7DC242' }} aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
