@@ -1,18 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-<<<<<<< HEAD
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-=======
-import Carousel from 'react-bootstrap/Carousel'
 
->>>>>>> b20605b8c078b5d1bfa98243138db8ad04b5da3a
-function App() {
-  return (
-    
+class Quiz extends React.Component {
+
+    render(){
+        return (
 <Form>
   <Form.Row>
     <Col>
@@ -27,7 +24,7 @@ function App() {
 
 
   <Form.Group controlId="exampleForm.ControlSelect1">
-    <Form.Label>Age</Form.Label>
+    <Form.Label>Age:</Form.Label>
     <Form.Control as="select">
       <option>0-20</option>
       <option>20-30</option>
@@ -38,7 +35,7 @@ function App() {
   </Form.Group>
 
   <Form.Group controlId="exampleForm.ControlSelect2">
-    <Form.Label>Gender</Form.Label>
+    <Form.Label>Gender:</Form.Label>
     <Form.Control as="select">
       <option>Male</option>
       <option>Female</option>
@@ -47,8 +44,8 @@ function App() {
   </Form.Group>
 
   <Form.Group controlId="Zip Code">
-    <Form.Label>Zip code</Form.Label>
-    <Form.Control type="zip code name" placeholder="Entr zip code" />
+    <Form.Label>Zip code: </Form.Label>
+    <Form.Control type="zip code name" placeholder="Entr zip code (5 Digits)" />
   </Form.Group>
 
   <fieldset>
@@ -221,30 +218,18 @@ function App() {
   <fieldset>
     <Form.Group as={Row}>
       <Form.Label as="legend" column sm={2}>
-        9. Are you Sneezing a?
+        9. Are you Sneezing a lot?
       </Form.Label>
       <Col sm={10}>
         <Form.Check
           type="radio"
-          label="Never"
+          label="Yes"
           name="formHorizontalRadios"
           id="formHorizontalRadios1"
         />
         <Form.Check
           type="radio"
-          label="Often"
-          name="formHorizontalRadios"
-          id="formHorizontalRadios2"
-        />
-        <Form.Check
-          type="radio"
-          label="Sometimes"
-          name="formHorizontalRadios"
-          id="formHorizontalRadios3"
-        />
-        <Form.Check
-          type="radio"
-          label="Rare"
+          label="No"
           name="formHorizontalRadios"
           id="formHorizontalRadios2"
         />
@@ -259,25 +244,13 @@ function App() {
       <Col sm={10}>
         <Form.Check
           type="radio"
-          label="Never"
+          label="Yes"
           name="formHorizontalRadios"
           id="formHorizontalRadios1"
         />
         <Form.Check
           type="radio"
-          label="Often"
-          name="formHorizontalRadios"
-          id="formHorizontalRadios2"
-        />
-        <Form.Check
-          type="radio"
-          label="Sometimes"
-          name="formHorizontalRadios"
-          id="formHorizontalRadios3"
-        />
-        <Form.Check
-          type="radio"
-          label="Rare"
+          label="No"
           name="formHorizontalRadios"
           id="formHorizontalRadios2"
         />
@@ -292,25 +265,40 @@ function App() {
       <Col sm={10}>
         <Form.Check
           type="radio"
-          label="Never"
+          label="Yes"
           name="formHorizontalRadios"
           id="formHorizontalRadios1"
         />
         <Form.Check
           type="radio"
-          label="Often"
+          label="No"
+          name="formHorizontalRadios"
+          id="formHorizontalRadios2"
+        />
+      </Col>
+    </Form.Group>
+  </fieldset>
+  <fieldset>
+    <Form.Group as={Row}>
+      <Form.Label as="legend" column sm={2}>
+        12. Time-Frame of these symptoms?
+      </Form.Label>
+      <Col sm={10}>
+        <Form.Check
+          type="radio"
+          label="Less than 24 hours"
+          name="formHorizontalRadios"
+          id="formHorizontalRadios1"
+        />
+        <Form.Check
+          type="radio"
+          label="24 - 48 hours"
           name="formHorizontalRadios"
           id="formHorizontalRadios2"
         />
         <Form.Check
           type="radio"
-          label="Sometimes"
-          name="formHorizontalRadios"
-          id="formHorizontalRadios3"
-        />
-        <Form.Check
-          type="radio"
-          label="Rare"
+          label="48 - 72 hours"
           name="formHorizontalRadios"
           id="formHorizontalRadios2"
         />
@@ -318,15 +306,8 @@ function App() {
     </Form.Group>
   </fieldset>
 
-
   <Button variant="primary" type="submit">
     Submit
   </Button>
 
-</Form> 
- 
-
-
-  )};
-
-export default App;
+</Form> );}}
