@@ -59,6 +59,7 @@ export default class AppMap extends Component {
                                 <Popup>
                                     <h3>{json.centername}</h3>
                                     <h4>{json.address}</h4>
+                                    <Button variant="secondary"><a href={json.url}>Schedule an appointment</a></Button>
                                 </Popup>
                             </Marker>
                         );
