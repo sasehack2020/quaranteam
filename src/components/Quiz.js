@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../App.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-class Quiz extends React.Component {
+export default class Quiz extends React.Component {
 
     render(){
         return (
@@ -45,7 +44,7 @@ class Quiz extends React.Component {
 
   <Form.Group controlId="Zip Code">
     <Form.Label>Zip code: </Form.Label>
-    <Form.Control type="zip code name" placeholder="Entr zip code (5 Digits)" />
+    <Form.Control type="zip code name" placeholder="Enter zip code (5 Digits)" />
   </Form.Group>
 
   <fieldset>

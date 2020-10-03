@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-
-class Carousel extends React.Component {
+export default class Landing extends React.Component {
 
 	render(){
     return(
@@ -44,6 +43,6 @@ class Carousel extends React.Component {
   </Carousel.Item>
 </Carousel>
 </div>
-);
+    );
 	}
 }
