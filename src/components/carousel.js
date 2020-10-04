@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 
-export default class Landing extends React.Component {
+class Carousel extends React.Component {
 
 	render(){
     return(
@@ -10,7 +10,7 @@ export default class Landing extends React.Component {
   			<Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://allbusinesssystems.com/wp-content/uploads/2017/05/Exam-Room-Casegoods-1-Stance.jpg"
+      src="holder.js/800x400?text=First slide&bg=373940"
       alt="First Slide"
     />
     <Carousel.Caption>
@@ -21,7 +21,7 @@ export default class Landing extends React.Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://th.bing.com/th/id/OIP.Olot3z24rM7z8g-AytkHPgHaE7?pid=Api&rs=1"
+      src="holder.js/800x400?text=Second slide&bg=282c34"
       alt="Third slide"
     />
 
@@ -33,7 +33,7 @@ export default class Landing extends React.Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://kathmandupathlab.com/wp-content/uploads/2017/11/lab4.jpg"
+      src="holder.js/800x400?text=Third slide&bg=20232a"
       alt="Third slide"
     />
 
@@ -44,6 +44,6 @@ export default class Landing extends React.Component {
   </Carousel.Item>
 </Carousel>
 </div>
-    );
+);
 	}
 }
