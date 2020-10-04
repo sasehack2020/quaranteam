@@ -1,32 +1,19 @@
-#!/usr/bin/env python
-# coding: utf-8
+def checkAnswer(x):
+    if (x.get('Cough') == 'on') & (x.get('Fatigue') == 'on') & (x.get('Sneezing') == 'on') & (x.get('Stuffy nose') == 'on'):
+        Result = "Allergies"
+    elif (x.get('Body aches') == 'on') & (x.get('Cough') == 'on') & (x.get('Fatigue') == 'on') & (x.get('Sneezing') == 'on') & (x.get('Sore throat') == 'on') & (x.get('Stuffy nose') == 'on'):
+        Result = "Cold"
+    elif (x.get('Body aches') == 'on') & (x.get('Cough') == 'on') & (x.get('Diarrhea') == 'on') & (x.get('Fatigue') == 'on') & (x.get('Fever/Chills/Shaking') == 'on') & (x.get('Headache') == 'on') & (x.get('Sore throat') == 'on') & (x.get('Stuffy nose') == 'on'):
+        Result = "Influenza"
+    else:
+        Result = "Coronavirus"
+    return Result
 
-import pandas as pd 
-import numpy as np
-import csv
+from flask import Flask, request, redirect
 
-# Definition to extract the zip codes from the testing_center
-def extractZip(st):
-    firstLine = st.strip().split('\n')[-1]
-    words = firstLine.strip().split()
-    lastWord = words[-1]
-    return lastWord 
+app = Flask(__name__)
 
-#Reading the csv 
-data = pd.read_csv('C:\\Users\\Prekshya\\Desktop\\SASEHack\\simplemaps_uszips_basicv1.72\\uszips.csv')
-data.head()
-
-# path to URL from Chrome DevTools Console
-url = "https://sheetlabs.com/NCOR/covidtestcentersinUS"
-
-# read remote URL data to DataFrame
-testing_center = pd.read_json(url)
-testing_center.head()
-
-#Creates a new columm for zipcode
-testing_center['zipcode']=testing_center['address'].apply(lambda x: extractZip(str(x)))
-testing_center.head()
- 
-#Concat the two databases
-final_dataset = pd.concat([data, testing_center], axis=1, sort=False)
-
+@app.route('/quiz', methods=["POST"])
+def show_results():
+    x = request.form
+    return checkAnswer(x)

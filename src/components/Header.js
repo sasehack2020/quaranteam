@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import AppMap from './AppMap';
 import Quiz from './Quiz';
+import Result from './Result';
 import Landing from './Landing';
 import Cards from './Cards';
 import { Nav } from 'react-bootstrap';
@@ -23,6 +24,12 @@ function AMComponent() {
   return <AppMap state={query.get('state')}/>;
 }
 
+function RComponent() {
+    let query = useQuery();
+
+    return <Result inf={query.get('inf')}/>;
+}
+
 var routes = [
     {
         path: '/',
@@ -36,6 +43,10 @@ var routes = [
     {
         path: '/quiz',
         main: () => <Quiz/>
+    },
+    {
+        path: '/results',
+        main: () => <RComponent/>
     }
 ]
 
