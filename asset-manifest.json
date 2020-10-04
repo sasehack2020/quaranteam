@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/quaranteam/static/css/main.9b89ee53.chunk.css",
+    "main.js": "/quaranteam/static/js/main.4ae9cb10.chunk.js",
+    "main.js.map": "/quaranteam/static/js/main.4ae9cb10.chunk.js.map",
+    "runtime-main.js": "/quaranteam/static/js/runtime-main.a3284f21.js",
+    "runtime-main.js.map": "/quaranteam/static/js/runtime-main.a3284f21.js.map",
+    "static/css/2.a4567992.chunk.css": "/quaranteam/static/css/2.a4567992.chunk.css",
+    "static/js/2.987e284b.chunk.js": "/quaranteam/static/js/2.987e284b.chunk.js",
+    "static/js/2.987e284b.chunk.js.map": "/quaranteam/static/js/2.987e284b.chunk.js.map",
+    "index.html": "/quaranteam/index.html",
+    "precache-manifest.8d1599dff909cbc86bc5736072c08a28.js": "/quaranteam/precache-manifest.8d1599dff909cbc86bc5736072c08a28.js",
+    "service-worker.js": "/quaranteam/service-worker.js",
+    "static/css/2.a4567992.chunk.css.map": "/quaranteam/static/css/2.a4567992.chunk.css.map",
+    "static/css/main.9b89ee53.chunk.css.map": "/quaranteam/static/css/main.9b89ee53.chunk.css.map",
+    "static/js/2.987e284b.chunk.js.LICENSE.txt": "/quaranteam/static/js/2.987e284b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3284f21.js",
+    "static/css/2.a4567992.chunk.css",
+    "static/js/2.987e284b.chunk.js",
+    "static/css/main.9b89ee53.chunk.css",
+    "static/js/main.4ae9cb10.chunk.js"
+  ]
+}
